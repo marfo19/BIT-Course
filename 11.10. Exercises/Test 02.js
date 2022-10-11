@@ -1,3 +1,6 @@
+/*2. Perform arithmetic operations on two numbers. Operations are add, subtract, multiply, divide,
+modulus.*/
+
 let x = 5;
 let y = 2;
 
