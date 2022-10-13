@@ -10,8 +10,12 @@ let e = 'Labrador Retriever';
 
 let x = 'Labrador Retriever';
 
-if (x == a || x == b || x == c || x == d || x == e) {
-    console.log('This is ' + x + ' called Neo.');
-} else {
+// if (x == a || x == b || x == c || x == d || x == e) {
+//     console.log('This is ' + x + ' called Neo.');
+// } else {
+//     console.log('This is a mixed breed.');
+// }
+
+x == a || x == b || x == c || x == d || x == e ?
+    console.log('This is ' + x + ' called Neo.') :
     console.log('This is a mixed breed.');
-}
