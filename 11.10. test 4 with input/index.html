@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 4. Create two variables (or if you know how to do it - input fields). One should be a number, other
+  should be a noun. Print on screen the number and pluralized form, like “5 cats” or “1 dog”. Bonus: Make
+  it handle a few collective nouns like “sheep” and “geese”. -->
+    <h1>Test 04</h1>
+    <input type="number" id="number" />
+
+    <label for="animal">Select animal:</label>
+    <select name="animal" id="animal">
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="goose">Goose</option>
+      <option value="sheep">Sheep</option>
+    </select>
+
+    <button onclick="myFunction()">Check the numbers</button>
+    <br />
+    <br />
+    <p id="demo"></p>
+</body>
+<script>
+    function myFunction() {
+        let number = document.getElementById('number').value,
+            animal = document.getElementById('animal').value;
+
+        if (number > 1 && animal == 'goose') {
+            document.getElementById('demo').innerHTML =
+                'There are ' + number + ' ' + 'geese' + '.';
+        } else if (number > 1) {
+            document.getElementById('demo').innerHTML =
+                'There are ' + number + ' ' + animal + 's.';
+        } else if (number == 1) {
+            document.getElementById('demo').innerHTML =
+                'There is ' + number + ' ' + animal + '.';
+        } else if (number == 0) {
+            document.getElementById('demo').innerHTML = 'There is no animal.';
+        } else {
+            document.getElementById('demo').innerHTML = 'Number must be positive!';
+        }
+    }
+</script>
+
+</html>
