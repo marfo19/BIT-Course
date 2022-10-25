@@ -2,3 +2,16 @@
 index.
 Input array: [4, 2, 2, -1, 6]
 Output: -1, 3 */
+
+var a = [4, 2, 2, -1, 6],
+    min = a[0],
+    index = 0;
+
+for (i = 0; i < a.length; i++) {
+    if (a[i] < min) {
+        min = a[i];
+        index = i;
+    }
+}
+
+console.log(min + ", " + index);

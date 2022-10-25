@@ -3,32 +3,20 @@ Input array: [4, 2, 2, -1, 6]
 Output: 2 */
 
 var a = [4, 2, 2, -1, 6];
-var value;
+var min = a[0];
 
 for (i = 0; i < a.length; i++) {
-    for (j = i + 1; j < a.length; j++) {
-        if (a[j] < a[i]) {
-            value = a[i];
-            a[i] = a[j];
-            a[j] = value;
-        }
+    if (a[i] < min) {
+        min = a[i];
     }
 }
-console.log(value);
-var a = [4, 2, 2, -1, 6];
-var temp;
-for (var i = 0; i < a.length; i++) {
-    for (var j = i + 1; j < a.length; j++) {
-        if (a[j] < a[i]) {
-            temp = a[i];
-            a[i] = a[j];
-            a[j] = temp;
-        }
+
+var min2 = a[0];
+
+for (x = 0; x < a.length; x++) {
+    if (a[x] < min2 && a[x] !== min) {
+        min2 = a[x];
     }
 }
-for (var i = 0; i < a.length; i++) {
-    if (a[i] < a[i + 1]) {
-        console.log(a[i + 1]);
-        break;
-    }
-}
+
+console.log(min2);
