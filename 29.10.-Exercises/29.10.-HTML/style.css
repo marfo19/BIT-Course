@@ -1,0 +1,58 @@
+.list1 {
+    list-style-type: circle;
+}
+
+.list2 {
+    list-style-type: square;
+}
+
+.list3 {
+    list-style-type: upper-latin;
+}
+
+.list4 {
+    list-style-type: upper-roman;
+}
+
+.list5 {
+    list-style-image: url(./image/square-rounded-16.gif);
+    width: 200px;
+}
+
+.list6 {
+    list-style-image: url(./image/square-rounded-16.gif);
+    width: 200px;
+    list-style-position: inside;
+}
+
+table {
+    margin: 0 auto;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.tableheader {
+    background-color: crimson !important;
+    color: white;
+}
+
+img {
+    width: 70px;
+}
+
+th {
+    padding: 10px 30px;
+}
+
+td {
+    padding: 30px 30px;
+}
+
+tr:hover {
+    background-color: orange;
+}
