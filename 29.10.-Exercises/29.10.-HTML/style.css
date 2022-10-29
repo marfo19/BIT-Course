@@ -68,13 +68,18 @@ tr:hover {
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 fieldset {
     background-color: #eee;
-    width: 350px;
+    width: 200px;
+    /* height: 500px; */
     margin: 100px auto;
     text-align: center;
     border-radius: 20px 0 20px 0;
-    padding: 0 50px;
+    padding: 0 25px;
     border: none;
     font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    margin: 20px 0 0 0;
 }
 
 .yellow {
@@ -84,5 +89,25 @@ fieldset {
 form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* height: 400px; */
+    text-align: left;
+}
+
+input {
+    margin: 0 0 20px 0;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #c1392b;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: url(./image/arrow-137-16.gif), auto;
 }
