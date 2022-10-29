@@ -3,11 +3,11 @@
 "My random string" -> ["M", "y", null, "r", "a"]
 "Random" -> ["R", "a", "n", "d", "o", "m"] */
 
-function random(string) {
+function convert(string) {
     var array = [];
     for (var i = 0; i < string.length; i++) {
         if (string[i] === " ") {
-            array[array.length] = "null";
+            array[array.length] = null;
         } else {
             array[array.length] = string[i];
         }
@@ -15,4 +15,4 @@ function random(string) {
     return array;
 }
 
-console.log(random("My random string"));
+console.log(convert("My random string"));
