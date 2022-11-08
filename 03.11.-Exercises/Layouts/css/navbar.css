@@ -1,0 +1,16 @@
+.navbar {
+    width: 960px;
+    background-color: #c8352f;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+}

@@ -1,0 +1,51 @@
+.square {
+    width: 200px;
+    height: 200px;
+}
+
+.first {
+    background-color: #c1392b;
+}
+
+.second {
+    background-color: #ffbe00;
+}
+
+.third {
+    background-color: #2d3e50;
+}
+
+#first {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#second {
+    position: relative;
+    top: -100px;
+    left: 100px;
+}
+
+#third {
+    position: relative;
+    top: -200px;
+    left: 200px;
+}
+
+#red {
+    position: absolute;
+    right: 0;
+}
+
+#yellow {
+    position: absolute;
+    right: 100px;
+    bottom: -600px;
+}
+
+#blue {
+    position: absolute;
+    right: 200px;
+    bottom: -700px;
+}
